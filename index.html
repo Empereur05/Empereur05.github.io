@@ -1,1 +1,31 @@
-hello world
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta http-equiv="Content-Style-Type" content="text/css">
+  <title></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Regardez vos films, séries, et émissions préférés en streaming HD gratuitement grace à l'iptv.">
+    <meta name="keywords" content="streaming, films, séries, émissions, HD, gratuit, streaming en ligne, streaming illimité">
+    <meta name="author" content="danocode">
+    <meta name="robots" content="index, follow">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="theme-color" content="#111111">
+  <link href="https://vjs.zencdn.net/8.0.4/video-js.css" rel="stylesheet" />
+</head>
+<body>
+<body>
+    <h1>IPTV Player (MKV Support)</h1>
+    <video id="my-video" class="video-js" controls preload="auto" width="640" height="360">
+        <source src="http://127.0.0.1:3000/proxy?url=http://30915-lined.cdn-o2.me/movie/2196efff19/189f87231db8/906259.mkv" type="video/webm">
+        <!-- Fallback -->
+        Votre navigateur ne supporte pas ce format vidéo.
+    </video>
+
+    <script src="https://vjs.zencdn.net/8.0.4/video.min.js"></script>
+    <script>
+        var player = videojs('my-video');
+    </script>
+</body>
+</body>
+</html>
